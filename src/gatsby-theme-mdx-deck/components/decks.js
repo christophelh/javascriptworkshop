@@ -12,6 +12,7 @@ export default ({ decks }) => {
         fontWeight: 'bold',
         px: 4,
         py: 3,
+        
       }}
     >
       <Text fontSize={[3, 4, 5]} fontWeight="bold">
@@ -25,6 +26,7 @@ export default ({ decks }) => {
               my: 2,
             }}
           >
+/>
             <Link
               to={d.slug}
               sx={{

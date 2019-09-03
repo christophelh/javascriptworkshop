@@ -1,8 +1,8 @@
-import { future } from '@theme-ui/presets';
+import { funk } from '@theme-ui/presets';
 
 export default {
-  ...future,
+  ...funk,
   styles: {
-    ...future.styles,
+    ...funk.styles,
   },
 };
