@@ -1,8 +1,8 @@
-import { funk } from '@theme-ui/presets';
+import { deep } from '@theme-ui/presets';
 
 export default {
-  ...funk,
+  ...deep,
   styles: {
-    ...funk.styles,
+    ...deep.styles,
   },
 };

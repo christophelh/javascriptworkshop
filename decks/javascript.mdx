@@ -1,0 +1,474 @@
+# Introduction to Javascript 
+
+---
+
+## Javascript is not Java 
+
+- JavaScript is a lightweight programming language(“scripting language”)
+- Used to make web pages interactive. 
+- JavaScript is also known as browser’s language.
+- Essential as for a front end developper
+
+--- 
+## Today we will be covering
+
+1. Data Type
+2. Javascript Variable: Declare, Assign a Value with Example
+3. JavaScript Array Methods: Create with Example
+4. For, While and Do While LOOP in JavaScript (with Example)
+5. JavaScript Conditional Statements: IF, Else, Else IF (Example)
+
+---
+## Why Javascript 
+
+- The web browser is one of the most used applications on both desktop and mobile devices.
+
+- Largest Meetup Community in Terms of Programming Language
+
+
+
+--- 
+
+
+
+
+## Declare Variables in JavaScript
+
+```JavaScript
+
+const name; // We define a variable called name
+
+```
+
+```JavaScript
+
+const name = "Chris"; // We assign a value to the variable name
+
+```
+
+---
+## Basic Data Type
+
+```JavaScript
+const name = 'Chris'; // This is a string
+let age = 35; // This is a number
+let weight = 95.5 // This is a float
+const sex = "Male"
+const isCycling = true // This is a boolean
+```
+
+
+--- 
+
+## Object Data Type
+
+The object is a complex data type that allows you to store collections of data.
+
+```JavaScript
+
+const car = {
+    model: "Opel",
+    color: "white",
+    doors: 3
+    price: "£20,000" 
+}
+```
+
+What is the brand of the car
+
+```JavaScript
+
+console.log(car.model) // output: Opel
+
+```
+
+---
+
+## Array Data Type
+
+An array is a type of object used for storing multiple values in single variable.
+
+```JavaScript
+let cities = ["London", "Paris", "New York"];
+```
+```JavaScript
+console.log(cities[0]); // Output: London
+console.log(cities[2]); // Output: New York
+```
+
+---
+
+## Function 
+
+The function is callable object that executes a block of code.
+
+```JavaScript
+
+const greeting = function(){ 
+    return "Learn to code @ OpenTechBootcamp"; 
+}
+
+console.log(greeting) // output: Learn to code @ OpenTechBootcamp
+
+```
+
+--- 
+
+## The typeof Operator
+
+The typeof operator can be used to find out what type of data a variable
+
+```JavaScript
+
+typeof 15;  // Returns: "number"
+typeof '12';  // Returns: "string". Number within quotes is typeof string
+typeof 'hello';  // Returns: "string"
+typeof false;  // Returns: "boolean"
+typeof {name: "Chris", age: 35}; 
+
+```
+
+--- 
+
+## JavaScript Array 
+
+Arrays are complex variables that allow us to store more than one value or a group of values under a single variable name. 
+
+JavaScript arrays can store any valid value, including strings, numbers, objects, functions.
+
+---
+
+## What if we wanted to stored every student name
+
+```JavaScript
+
+student1 = "Mark"
+student2 = "Taylor"
+student1 = "Chris"
+
+```
+
+--- 
+
+## Let's use an array
+
+```JavaScript
+
+const students = ["Mark", "taylor" , "Chris" ]
+
+```
+
+- An array is an ordered collection of values. 
+- Each value in an array is called an element, and each element has a numeric position in an array, known as its index.
+
+--- 
+
+## Accessing an array
+
+```JavaScript
+
+console.log("List of all the students:",students) // output: ["Mark", "taylor" , "Chris" ]
+
+console.log("First student:",students[0]) // output: "Mark"
+
+console.log("Second Students:",students[1]) // output: "Taylor"
+
+```
+
+--- 
+
+## Adding new students 
+
+
+```JavaScript
+
+students.push("Alice", "Sophie")
+console.log(students)  //  output: ["Mark", "taylor" , "Chris", "Alice" , "Sophie" ]
+
+```
+
+--- 
+## Removing an element of the array 
+
+
+```JavaScript
+
+students.pop()
+
+console.log(students.length())  //  output: 4
+
+```
+
+--- 
+
+## Size of an Array 
+
+
+```JavaScript
+
+console.log(students.length())  //  output: 5
+
+```
+
+--- 
+
+## Creating a String from an Array
+
+
+
+```JavaScript
+
+students.join(", ")
+console.log(students)  //  output: Mark, taylor , Chris, Alice , Sophie
+
+
+
+```
+
+--- 
+
+
+## Extracting a Portion of an Array
+
+
+
+```JavaScript
+
+students.slice(1,3)
+console.log(students)
+
+```
+
+--- 
+
+
+## Excercise 
+
+- Create an array named colors that contains five different names of colors as strings.
+
+- Access the first color in the array and print it to the console using console.log()
+
+-  Now do the same with the third color in the list. (Remember that array indexes start at 0, not at 1!)
+
+- Write one line of code that changes the value of the last color in the list to "ultraviolet" (overwriting the previous value).
+
+- Create a new variable called fourthColor and set it equal to the fourth color in the list.
+
+- Add another color to the end of the list.
+
+- Print the length of the array to the console with console.log()
+
+
+--- 
+
+More about array
+
+**https://www.tutorialrepublic.com/javascript-tutorial/javascript-arrays.php**
+
+---
+
+## Conditions
+JavaScript Conditional Statements
+
+
+--- 
+
+## The if Statement
+The if statement is used to execute a block of code only if the specified condition evaluates to true.
+
+```JavaScript
+
+let location = "london"
+
+if (location == "london"){
+    console.log(" we are in london")
+}
+
+```
+---
+
+## The if...else Statement
+
+ Enhance the decision making capabilities of your JavaScript program by providing an alternative choice
+
+ ```JavaScript
+
+ let location = "london"
+
+if (location == "london"){
+    console.log("we are in london")
+}else{
+    console.log(" We are not in London")
+}
+
+
+```
+---
+
+## The Ternary Operator
+
+The ternary operator provides a shorthand way of writing the if...else statements
+
+```JavaScript
+
+let location = "london" 
+
+const city = location == "london" ? "we are in london" : " We are not in London"
+
+console.log(city)
+
+```
+
+---
+
+## Loop 
+
+--- 
+
+
+## forEach (Iterate over arrays)
+
+```JavaScript
+
+students.forEach((student, index) =>  {
+	console.log(index); // index
+	console.log(student); // value
+});
+
+```
+
+---
+
+## The for...of Loop (Dont work with object)
+
+const codingSchoolName = "Launch22"
+
+```JavaScript
+
+for(let letter of codingSchoolName) {
+    console.log(letter); // Output:  L,a,u,n,c,h,2,2
+}
+
+```
+
+--- 
+
+## The for...in Loop (Iterate over objects)
+
+```JavaScript
+
+const schoolProgram = { 
+    duration: "6 weeks", 
+    language: "Javascript" , 
+    teacher: "chris" , 
+    startingDate = "30.09.19" 
+    }
+
+```
+
+
+
+```JavaScript
+
+for(var detail in schoolProgram) {  
+    console.log("<li>" + detail + " : " + schoolProgram[detail] + "</li>"); 
+}
+
+```
+
+---
+
+## Excercise
+
+- Write a forEach loop to iterate through every color in the array and print each color's value to the console.
+
+- Copying from that loop you just wrote, modify it to print every color's value and every color's index in this format: 3, purple or 0, blue etc.
+
+
+--- 
+
+## Functions
+
+- Functions reduces the repetition of code within a program
+- Functions makes the code much easier to maintain
+- Functions makes it easier to eliminate the errors
+
+---
+
+## Calling a function
+
+```JavaScript
+
+// Defining function
+const sayHello = () =>  {
+    console.log("Hello, welcome to OpenTechBootcamp!");
+}
+
+// Calling the function
+sayHello()
+
+```
+--- 
+
+## Adding arguments to the function
+
+```JavaScript
+
+const sayHello = (name) => { 
+    console.log(`Hello ${name}, welcome to OpenTechBootcamp!`);
+}
+
+sayHello("chris")
+
+```
+
+
+```JavaScript
+
+const canDrink = (age) => { 
+    const checked = age >= 18 ? "Allow to drink":"Not yet"
+    console.log(checked)
+}
+
+canDrink(18)
+
+```
+
+---
+
+## Excercise 1
+
+Why pay a fortune teller when you can just program your fortune yourself?
+
+Write a function named tellFortune that:
+takes 4 arguments: number of children, partner's name, geographic location, job title.
+outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+Call that function 3 times with 3 different values for the arguments
+
+---
+
+## Excercise 2
+
+You know how old your dog is in human years, but what about dog years? Calculate it!
+
+Write a function named calculateDogAge that:
+takes 1 argument: your puppy's age.
+calculates your dog's age based on the conversion rate of 1 human year to 7 dog years.
+outputs the result to the screen like so: "Your doggie is NN years old in dog years!"
+Call the function three times with different sets of values.
+
+---
+
+
+## Exercise 3
+
+Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
+
+Write a function named calculateSupply that:
+takes 2 arguments: age, amount per day.
+calculates the amount consumed for rest of the life (based on a constant max age).
+outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
+Call that function three times, passing in different values each time.
+Bonus: Accept floating point values for amount per day, and round the result to a round number.
+
+---

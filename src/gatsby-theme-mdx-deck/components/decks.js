@@ -16,7 +16,7 @@ export default ({ decks }) => {
       }}
     >
       <Text fontSize={[3, 4, 5]} fontWeight="bold">
-        Captain Automation
+        Javascript for Beginners
       </Text>
       <Flex>
         {decks.map(d => (
