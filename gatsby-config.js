@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Captain Automation`,
+    title: `Javascript workshop`,
     name: `David Leuliette`,
-    siteUrl: `https://captainautomation.xyz`,
-    description: `Manual Work is a Bug. Always be automating, change your mindset and achieve more in less time.`,
-    author: `David leuliette`,
+    siteUrl: `opentechcamp.com`,
+    description: `Free javascript presentation`,
+    author: `Christophe Honore`,
 
     // important to set the main text that appears in the hero
     hero: {
@@ -14,11 +14,11 @@ module.exports = {
     social: [
       {
         name: `Twitter`,
-        url: `https://twitter.com/flexbox_`,
+        url: `https://twitter.com/opentechcamp`,
       },
       {
         name: `Instagram`,
-        url: `https://instagram.com/captainautomation/`,
+        url: `https://instagram.com/opentechcamp/`,
       },
     ],
   },
