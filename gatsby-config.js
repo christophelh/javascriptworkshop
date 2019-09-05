@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Javascript workshop`,
     name: `David Leuliette`,
-    siteUrl: `opentechcamp.com`,
+    siteUrl: `https://www.opentechcamp.com`,
     description: `Free javascript presentation`,
     author: `Christophe Honore`,
 
