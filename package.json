@@ -15,7 +15,7 @@
     "@theme-ui/presets": "^0.2.30",
     "emotion-theming": "^10.0.17",
     "gatsby": "^2.13.51",
-    "gatsby-plugin-mdx": "^1.0.24",
+    "gatsby-plugin-mdx": "^2.14.1",
     "gatsby-plugin-theme-ui": "^0.2.33",
     "gatsby-theme-mdx-deck": "^3.0.9",
     "react": "^16.8.6",
